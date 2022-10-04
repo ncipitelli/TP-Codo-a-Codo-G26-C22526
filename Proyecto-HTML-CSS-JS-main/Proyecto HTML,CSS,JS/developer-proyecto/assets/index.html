@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="page icon" type="image/png" sizes="32x32" href="favicon/icono.png" />
+    <title>NAIMA</title>
+
+    <!--Estilos CSS -->
+    <link rel="stylesheet" href="css/miestilo.css" />
+
+    <!-- Favicons -->
+    <link rel="foto principal" sizes="180x180" href="images/Foto principal.png" />
+
+    <!-- Animaciones CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Jane Doe | Desarrolladora Web</title>
+  </head>
+
+  <body>
+    <!-- Barra de Navegación -->
+    <nav>
+        <h1>NAIMA</h1>
+        <ul class="navegacion">
+          <li><a href="#inicio" class="nav-link">Inicio</a></li>
+          <li><a href="#productos" class="nav-link">Productos</a></li>
+          <li><a href="#información" class="nav-link">Información</a></li>
+          <li><a href="#contacto" class="nav-link">Contacto</a></li>
+        </ul>
+        <button class="menu-hamburguesa" id="menu-hamburguesa">
+          <ion-icon class="barras" name="menu-outline"></ion-icon>
+        </button>
+  </nav>
+
+    <!-- Sección Hero  -->
+
+    <section class="hero" id="about">
+        <img
+          src="images/Foto principal.png"
+          alt="jane-doe"
+          loading="lazy"
+          class="hero-img"
+        />
+        <div class="bio animate__animated animate__shakeX">
+          <h2 class="bio-titulo">Sobre Mí</h2>
+          <p class="bio-texto">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia sed
+            dolorem fugit sapiente porro veniam pariatur dolore nostrum delectus
+            inventore tempore minus nemo, iste ullam illo laboriosam maiores
+            repudiandae quos!
+          </p>
+        </div>
+  </section>
+
+    <!-- Sobre Mí -->
+
+    <section class="mas-sobre">
+        <h2>Naturaleza orgánica</h2>
+        <p>
+         | Somos productores. Extraemos el principio activo de nuestros cultivos y elaboramos productos naturales para el cuidado del cuerpo&mente |
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur
+          nostrum dolor minus, libero delectus praesentium perferendis
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
+          consequuntur labore? Ea totam voluptas amet!
+        </p>
+      </section>
+
+    <!-- Sección Habilidades -->
+
+    <section class="habilidades" id="habilidades">
+        <h2 class="header-habilidadr">Algunos de los elementos naturales con los que trabajamos</h2>
+  
+        <div class="contenedor-habilidades">
+          <div class="first-set animate__animated animate__pulse">
+            <img
+              src="icons/avena.png"
+              alt=""
+              loading="lazy"
+              class="icon icon-card"
+            />
+            <img
+              src="icons/coco.png"
+              alt=""
+              loading="lazy"
+              class="icon icon-card"
+            />
+            <img
+              src="icons/lavanda.png"
+              alt=""
+              loading="lazy"
+              class="icon icon-card"
+            />
+          </div>
+  
+          <div class="second-set animate__animated animate__pulse">
+            <img
+              src="icons/miel.png"
+              alt=""
+              loading="lazy"
+              class="icon icon-card"
+            />
+            <img
+              src="icons/romero.png"
+              alt=""
+              loading="lazy"
+              class="icon icon-card"
+            />
+            <img
+              src="icons/rosa.png"
+              alt=""
+              loading="lazy"
+              class="icon icon-card"
+            />
+          </div>
+        </div>
+      </section>
+    <!-- Sección Proyectos -->
+
+    <!-- Sección Contacto-->
+
+    <section class="contacto" id="contacto">
+        <h2>Contacto</h2>
+        <div class="formulario-contacto-contenedor">
+          <div class="formulario-contacto">
+            <form action="https://formspree.io/f/xyylngw" method="POST">
+              <div class="control-formulario">
+                <label for="name">Nombre completo</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="sender-name"
+                  placeholder="Escribe tu nombre"
+                  class="input-field"
+                  required
+                />
+              </div>
+              <div class="control-formulario">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="sender-email"
+                  placeholder="Ingreso tu correo electrónico"
+                  class="input-field"
+                  required
+                />
+              </div>
+              <div class="control-formulario">
+                <label for="mensaje">Mensaje</label>
+                <textarea
+                  id="mensaje"
+                  cols="60"
+                  rows="10"
+                  placeholder="Escribe tu mensaje"
+                  name="mensaje"
+                  class="input-field"
+                  required
+                ></textarea>
+              </div>
+              <input
+                type="submit"
+                value="Enviar"
+                id="submit-btn"
+                class="submit-btn"
+              />
+            </form>
+          </div>
+        </div>
+      </section>
+
+    <!-- Sección de redes sociales - Fijado a la derecha -->
+    <div class="sociales">
+        <a href="#" target="_blank"><img src="icons/instagram.png" alt="Instagram" loading="lazy" class="socicon" /></a>
+        <a href="#" target="_blank"><img src="icons/github.png" alt="Github" class="socicon" /></a>
+
+    <!-- Vuelve al comienzo  -->
+    <i class="desplazarse-hacia-arriba" id="desplazarse-hacia-arriba"
+      ><img
+        src="icons/flecha-hacia-arriba.png"
+        class="socicon up-arrow"
+        alt="desplazarse-hacia-arriba"
+    /></i>
+
+    <!-- Sección Footer  -->
+    <footer>
+        <p class="copy">&copy; Copyright 2022</p>
+        
+  </footer>
+
+    <!-- Website scripts -->
+    <script src="assets/js/app.js"></script>
+
+    <!-- Ion icons scripts -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
