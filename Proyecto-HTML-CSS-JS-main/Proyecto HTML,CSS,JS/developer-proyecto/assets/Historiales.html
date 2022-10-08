@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/historiales.js"></script>
+    <link rel="stylesheet" href="css/historiales.css">
+    <title>Historiales</title>
+</head>
+<body>
+        <!-- Barra de Navegación -->
+        <nav>
+            <h1>NAIMA NATURALEZA ORGANICA</h1>
+                <input type="checkbox" id="menu">
+                <label for="menu"> ☰ </label>
+                
+                <ul class="navegacion">
+                    <li><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li><a href="index.html" class="nav-link">Productos</a></li>
+                    <li><a href="index.html" class="nav-link">Contacto</a></li>
+                    <li><a href="Historiales.html" class="nav-link">Gestion</a></li>
+                  </ul>
+             
+        </nav>
+    <header>Gestion usuario interno</header>
+    <div class="solicitudes">Consumo de una Api rest para busqueda de usuarios registrados
+        <button onclick="searchU();">Obtener usuarios</button>
+    </div>
+    <div class="solicitudes">Consumo de una Api rest para busqueda de comentarios
+        <button onclick="searchC();">Obtener comentarios</button>
+    </div>
+   
+    <div id="tabla"></div>
+</body>
+</html>

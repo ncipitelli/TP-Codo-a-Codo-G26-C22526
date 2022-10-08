@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -22,23 +23,25 @@
   </head>
 
   <body>
+   
     <!-- Barra de Navegación -->
     <nav>
-        <h1>NAIMA</h1>
-        <ul class="navegacion">
+      <h1>NAIMA NATURALEZA ORGANICA</h1>
+          <input type="checkbox" id="menu">
+          <label for="menu"> ☰ </label>
+          
+    <ul class="navegacion">
           <li><a href="#inicio" class="nav-link">Inicio</a></li>
           <li><a href="#productos" class="nav-link">Productos</a></li>
-          <li><a href="#información" class="nav-link">Información</a></li>
+          <li><a href="Historiales.html" class="nav-link">Gestion</a></li>
           <li><a href="#contacto" class="nav-link">Contacto</a></li>
         </ul>
-        <button class="menu-hamburguesa" id="menu-hamburguesa">
-          <ion-icon class="barras" name="menu-outline"></ion-icon>
-        </button>
+       
   </nav>
 
     <!-- Sección Hero  -->
 
-    <section class="hero" id="about">
+    <section class="hero" id="inicio">
         <img
           src="images/Foto principal.png"
           alt="jane-doe"
@@ -75,7 +78,7 @@
 
     <!-- Sección Habilidades -->
 
-    <section class="habilidades" id="habilidades">
+    <!--<section class="habilidades" id="habilidades">
         <h2 class="header-habilidadr">Algunos de los elementos naturales con los que trabajamos</h2>
   
         <div class="contenedor-habilidades">
@@ -121,11 +124,24 @@
             />
           </div>
         </div>
-      </section>
+      </section>-->
     <!-- Sección Proyectos -->
 
     <!-- Sección Contacto-->
-
+  <section id="contacto">
+    <form action="forum.cfm" method="post">
+      <fieldset>
+          <legend>Formulario de Contacto</legend>
+          <label for="nombre">Nombre</label>
+          <input required type="text" name="nombre" id="nombre" autocomplete="off" autofocus />
+          <br/>
+          <label for="apellido">Apellido</label>
+          <input required type="text" name="apellido" id="apellido" autocomplete="off" />
+          <br/>
+          
+      </fieldset>
+    </form>
+<!--
     <section class="contacto" id="contacto">
         <h2>Contacto</h2>
         <div class="formulario-contacto-contenedor">
@@ -175,20 +191,20 @@
           </div>
         </div>
       </section>
-
+    -->
     <!-- Sección de redes sociales - Fijado a la derecha -->
-    <div class="sociales">
+ <!--   <div class="sociales">
         <a href="#" target="_blank"><img src="icons/instagram.png" alt="Instagram" loading="lazy" class="socicon" /></a>
         <a href="#" target="_blank"><img src="icons/github.png" alt="Github" class="socicon" /></a>
-
+-->
     <!-- Vuelve al comienzo  -->
-    <i class="desplazarse-hacia-arriba" id="desplazarse-hacia-arriba"
+<!--    <i class="desplazarse-hacia-arriba" id="desplazarse-hacia-arriba"
       ><img
         src="icons/flecha-hacia-arriba.png"
         class="socicon up-arrow"
         alt="desplazarse-hacia-arriba"
     /></i>
-
+-->
     <!-- Sección Footer  -->
     <footer>
         <p class="copy">&copy; Copyright 2022</p>
