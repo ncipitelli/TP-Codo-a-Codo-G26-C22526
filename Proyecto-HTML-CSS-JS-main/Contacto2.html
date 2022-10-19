@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Formulario de contacto</title>
+        <meta charset="utf-8"/>
+        <script src="js/localStorage.js"></script>
+        <link rel="stylesheet" href="css/contacto2.css">
+    </head>
+    <body> 
+        <nav>
+            <h1>NAIMA NATURALEZA ORGANICA</h1>
+                <input type="checkbox" id="menu">
+                <label for="menu"> ☰ </label>
+                
+          <ul class="navegacion">
+              <li><a href="index.html" class="nav-link">Inicio</a></li>
+                <li><a href="Productos.html" class="nav-link">Productos</a></li>
+                <li><a href="Contacto2.html" class="nav-link">Contacto</a></li>
+                <li><a href="Historiales.html" class="nav-link">Gestion</a></li>
+      
+              </ul>
+                 
+        </nav>
+
+        <header>Contactate con nosotros</header>
+        <br><br>
+	    <form onsubmit="return formSubmitted();">
+	        <fieldset>
+            <legend>Informacion Personal</legend>
+		        <label>
+			        Nombre : 
+			        <input type="text" id="nombre" required>
+		        </label><br>
+                <label>
+			        Apellido : 
+			        <input type="text" id="apellido" required>
+		        </label><br>
+		        <label>
+			        Email : 
+			        <input type="email" id="email" required>
+		        </label><br>
+		        <label>
+			        Fecha de Nacimiento : 
+			        <input type="date" id="fdn" required>
+		        </label><br>
+		        <br>
+		        <div><button id="agregar">Agregar el nuevo contacto</button></div>
+		    </fieldset>
+	    </form>
+	
+  <h3>Lista de contactos</h3> 
+  <div id="contactos"></div>
+	<div id="botones"><button onclick="vaciarLista();">Vaciar</button> 
+	 <button onclick="lc.salvarLista();">Guardar</button> 
+   <button onclick="cargarLista();">Cargar</button>
+</div>
+
+</body>
+</html>
