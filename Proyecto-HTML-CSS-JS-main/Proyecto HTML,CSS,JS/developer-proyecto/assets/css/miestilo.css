@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
 
-/* Variables */
+
+
 :root {
   --font-family: "Roboto", sans-serf;
   --normal-font: 400;
@@ -29,16 +30,16 @@ html {
   box-sizing: border-box;
 }
 
-ul {
+nav ul {
   list-style-type: none;
 }
 
-a {
+nav li {
   text-decoration: none;
   color: var(--primary-color);
 }
 
-a:hover {
+nav li:hover {
   color: var(--secondary-color);
 }
 
@@ -52,297 +53,123 @@ nav {
   left: 0;
   z-index: 1;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   padding: 1.5rem 3.5rem;
   background-color: var(--bg-color);
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
 
-nav h1 {
-  color: var(--color-primario);
-}
-
-nav a {
-  color: var(--color-primario);
-  transition: var(--transicion);
-}
-nav a:hover {
-  color: var(--valor-secundario);
-  border-bottom: 2px solid var(--valor-secundario);
-}
-
-nav ul {
-  display: flex;
-  gap: 1.9rem;
-}
-
-nav ul li {
-  font-weight: var(--negrita);
-}
-
-.menu-hamburguesa {
-  color: var(--primary-color);
-  font-size: 2rem;
-  border: 0;
-  background-color: transparent;
-  cursor: pointer;
+nav ul{
   display: none;
 }
 
-.hero {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2.5rem;
-  max-width: 68.75rem;
-  margin: auto;
+nav input:checked  ~ ul{
+  display:block;
 }
 
-.hero img {
-  height: 37.5rem;
-  width: 37.5rem;
+nav input {
+  display: none;
 }
 
-.bio {
-  width: 25rem;
-  padding: 0.625rem;
-  border-radius: 6px;
-  box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+nav h1{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif,;
+  font-size: 40px;
+  padding-right: 50px;
+  padding-left: 20px;
 }
 
-.bio h1 {
-  margin-bottom: var(--bottom-margin);
-}
-
-.bio p {
-  line-height: var(--line-height);
-  padding: 0.3rem 0;
-}
-
-.mas-sobre {
-  background-color: var(--bg-color);
-  padding: 1rem 6rem;
-}
-
-.mas-sobre h2 {
-  margin-bottom: var(--bottom-margin);
-  text-align: center;
-}
-
-.mas-sobre p {
-  line-height: var(--line-height);
-  padding: 0.4rem;
-}
-
-.habilidades {
-  max-width: 61rem;
-  margin: auto;
-  text-align: center;
-  margin-top: 2.5rem;
-}
-
-.encabezado-habilidad {
-  margin-bottom: 1rem;
-}
-
-.contenedor-habilidad img {
-  padding: 1.25rem;
-}
-
-.icono {
-  width: 2rem;
-  height: 2remrem;
-}
-
-.tarjeta-icono {
-  background-color: #fff;
-  border-radius: 11px;
-  box-shadow: 0 3px 10px var(--secondary-shadow);
-  padding: 20px;
-  margin: 10px;
-}
-
-.contacto {
-  margin-top: 2rem;
-}
-
-.contacto h2 {
-  text-align: center;
-  margin-bottom: var(--bottom-margin-2);
-}
-
-.contenedor-formulario-contacto {
-  max-width: 40.75rem;
-  margin: 0 auto;
-  padding: 0.938rem;
+nav label {
+  box-sizing: border-box;
+  display: inline-block;
+  border: 1px solid black;
   border-radius: 5px;
-  box-shadow: 0 3px 10px var(--secondary-shadow);
-}
-
-.contenedor-formulario-contacto label {
-  line-height: 2.7em;
-  font-weight: var(--bold-font);
-  color: var(--primary-color);
-}
-
-.contenedor-formulario-contacto textarea {
-  min-height: 6.25rem;
-  font-size: 14px;
-}
-
-.contenedor-formulario-contacto .input-field {
-  width: 100%;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-radius: 5px;
-  border: none;
-  border: 2px outset var(--primary-color);
-  font-size: 0.875rem;
-  outline: none;
-}
-
-.input-field::placeholder {
-  padding: 0.5rem;
-  color: var(--primary-color);
-}
-
-.submit-btn {
-  width: 100%;
+  width: 40px;
+  height: 40px;
   padding: 10px;
-  margin: 10px 0;
-  background-color: #fff;
-  border: 2px solid var(--primary-color);
+  margin-right: 20px;
+
+  font-weight: bold;
+  text-align: center;
+  user-select: none;
+}
+
+nav li {
+  text-align: center;
+  justify-content: center;
   border-radius: 5px;
-  font-size: 1rem;
-  font-weight: var(--bold-font);
-  transition: var(--transition);
+  width: 100px;
+  height: 40px; 
+  display: inline-block;
+  background: white;
+  margin-right: 10px;
+  padding-top: 10px;
+  list-style: none;
+  border: 1px solid grey;
 }
 
-.submit-btn:hover {
-  background-color: var(--primary-color);
-  border: 2px solid var(--primary-color);
-  cursor: pointer;
+nav li:hover {
+  background-color: lightblue;
 }
 
-.sociales {
-  display: flex;
-  flex-direction: column;
-  position: fixed;
-  right: 1%;
-  bottom: 50%;
+form{
+  margin-top: 50px;
 }
 
-.socicon {
-  width: 2rem;
-  height: 2rem;
+#contacto label{
+  width: 100px;
+}
+#contacto input{
+  margin-left: 200px;
+  width: 200px;
+}
+.solicitudes{
+  margin-top: 50px;
+  margin-left: 100px;
+  margin-bottom: 50px;
+  color: black;
 }
 
-footer {
-  background-color: var(--bg-color);
-  padding: 1.25rem;
+button{
+  float: right;
+  margin-right: 100px;
+  height: 30px;
+  width: 150px;
+  background-color: black;
+  color: aliceblue;
+}
+
+header{
+  margin-top: 20px;
+  font-size: 30px;
   text-align: center;
-  margin: 2rem 0 0;
+  color: aliceblue;
+  background-color: black;
 }
 
-.desplazarse-hacia-arriba {
-  position: fixed;
-  right: 0.5%;
-  bottom: 3%;
-  cursor: pointer;
-}
-
-.flecha-arriba {
-  width: 3rem;
-  height: 3rem;
-}
-
-@media screen and (max-width: 720px) {
-  /* los cambios se reflejan en una pantalla con un ancho de 720px ye inferior */
-}
-
-nav {
-  padding: 1.5rem 1rem;
-}
-
-nav ul {
-  position: fixed;
-  background-color: var(--bg-color);
-  flex-direction: column;
-  top: 86px;
-  left: 10%;
-  width: 80%;
-  text-align: center;
-  transform: translateX(120%);
-  transition: transform 0.5s ease-in;
-}
-
- nav ul li {
-  margin: 8px;
-}
-
-.menu-hamburguesa {
-  display: block;
-}
-
-nav ul.show {
-  transform: translateX(0);
-}
-
-.hero {
-  margin-top: -4rem;
-  flex-direction: column;
-  gap: 0;
-}
-
-.hero img {
-      height: 37.5rem;
-      width: 30rem;
+table {
+  color: blue;
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
   }
+  table, tr, td {
+    border: 1px solid;
+   
+  } 
 
-.bio {
-  margin-top: -7rem;
-  width: 20.5rem;
-}
-
-.mas-sobre {
-  margin-top: 2rem;
-  padding: 1rem 3.5rem;
-}
-
-.mas-sobre h2 {
-  text-align: center;
-}
-
-.mas-sobre p {
-  text-align: justify;
-}
-
-.icono {
-  width: 5.875rem;
-  height: 5.25rem;
-}
-
-.contenedor-formulario-de-contacto {
-  max-width: 23.75rem;
-}
-
-@media screen and (max-width: 420px) {
-  .hero img {
-    height: 37.5rem;
-    width: 23rem;
+  th{
+    width: auto;
+    font-weight: bold;
+    font-size: large;
   }
-
-  .bio {
-    width: 18.3rem;
+  .fotosProducto img{
+    width: 200px;
   }
-
-  .contenedor-proyecto {
-    width: 17.875rem;
-  }
-
-  .contenedor-formulario-de-contacto{
-    max-width: 17.75rem;
-  }
-} 
+  .fotosProducto{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 250px);
+    grid-auto-rows: 300px;
+    grid-gap: 1rem;
+    justify-content: center;
+}
 
