@@ -1,4 +1,4 @@
-console.log("lee el java");
+console.log("lee el javascript");
 const nombre=document.querySelector('#nombre');
 const apellido=document.querySelector('#apellido');
 const email=document.querySelector('#email');
