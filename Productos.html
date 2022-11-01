@@ -6,10 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="page icon" type="image/png" sizes="32x32" href="favicon/icono.png" />
-    <title>NAIMA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <title>NAIMA Productos</title>
 
     <!--Estilos CSS -->
-    <link rel="stylesheet" href="css/miestilo.css" />
+    <link rel="stylesheet" href="style.css" />
 
     <!-- Favicons -->
     <link rel="foto principal" sizes="180x180" href="images/Foto principal.png" />
@@ -24,67 +31,130 @@
 
   <body>
    
-    <!-- Barra de Navegación -->
-    <nav>
-      <h1>NAIMA NATURALEZA ORGANICA</h1>
-          <input type="checkbox" id="menu">
-          <label for="menu"> ☰ </label>
-          
-    <ul class="navegacion">
-        <li><a href="index.html" class="nav-link">Inicio</a></li>
-        <li><a href="Productos.html" class="nav-link">Productos</a></li>
-        <li><a href="Contacto2.html" class="nav-link">Contacto</a></li>
-        <li><a href="Historiales.html" class="nav-link">Gestion</a></li>
-        </ul>
-       
+    <!----------------------------------------- Barra de Navegación ---------------------------------------------------->
+    <div class="scroll-up-btn">
+      <i class="fas fa-angle-up"></i>
+  </div>
+  <nav class="navbar">
+      <div class="max-width">
+          <div class="logo"><a href="#">NAI<span>MA</span></a></div>
+          <ul class="menu">
+              <li><a href="index.html" class="menu-btn">Inicio</a></li>
+              <li><a href="Historiales.html" class="menu-btn">Historiales</a></li>
+              <li><a href="Productos.html" class="menu-btn">Productos</a></li>
+              <li><a href="Contacto2.html" class="menu-btn">Contacto</a></li>
+
+          </ul>
+          <div class="menu-btn">
+              <i class="fas fa-bars"></i>
+          </div>
+      </div>
   </nav>
-  <header>Productos que ofrecemos</header>
-  <section id="info">
-    <p>
-        NAIMA engloba una serie de productos elaborados desde el primer momento con conciencia ambiental y ecológica, 
-        cuidando las propiedades naturales y los principios activos medicinales provenientes de la naturaleza. 
-        Conservando la calidad en cada uno de ellos, el método de producción no es en serie, sino, que se selecciona
-         cuidadosamente la materia prima a trabajar.         
-    </p>
-  </section>
-  <section class="hidrolatos">
-    <h2>Hidrolatos</h2>
-      <p>Los hidrolatos son aguas que contienen los principios activos hidrosolubles de plantas y flores. 
-      Son el resultado acuoso de la destilación de los aceites esenciales, obtenidos por el arrastre de 
-      vapor de plantas medicinales y flores.
-      Se obtienen durante la destilación de las plantas y flores para obtener el aceite esencial, es decir, 
-      en el mismo proceso se obtiene el aceite esencial que es más ligero y flota y el hidrolato o agua 
-      esencial, que queda en el fondo y separado.
-      </p>
-    </section>
-  <div class="fotosProducto" id="Hidrolatos">
-    <p><img src="images/hidrolatos empretienda 1_Mesa de trabajo 1 copia 2.jpg" alt="Hidrolato de Cedron"> 
-      Hidrolato de Cedron</p>
-    <p> <img src="images/hidrolatos empretienda 1_Mesa de trabajo 1 copia 3.jpg" alt="Hidrolato de Melisa">
-      Hidrolato de Melisa</p>
-    <p><img src="images/hidrolatos empretienda 1_Mesa de trabajo 1 copia 4.jpg" alt="Hidrolato de Poleo">
-      Hidrolato de Poleo</p>
-    <p><img src="images/hidrolatos empretienda 1_Mesa de trabajo 1 copia 5.jpg" alt="Hidrolato de Lupulo">
-      Hidrolato de Lupulo</p>
-    <p> <img src="images/hidrolatos empretienda 1_Mesa de trabajo 1 copia 6.jpg" alt="Hidrolato de Rosas">
-      Hidrolato de Rosas</p>
-    <p><img src="images/hidrolatos empretienda 1_Mesa de trabajo 1 copia 7.jpg" alt="Hidrolato de Lavanda">
-      Hidrolato de Lavanda</p>
-    <p><img src="images/hidrolatos empretienda 1_Mesa de trabajo 1 copia.jpg" alt="Hidrolato de Romero">
-      Hidrolato de Romero</p>
-    <p><img src="images/hidrolatos empretienda 1_Mesa de trabajo 1.jpg" alt="Hidrolato de Tomillo">
-      Hidrolato de Tomillo</p>
-    </div>
+
+  <!-------------------------------------------- Section Products -------------------------------------------------->
+  <div class="contenedor-products">
+      <h1>Productos que ofrecemos</h1>
+      <div id="info">
+          <p>
+            NAIMA engloba una serie de productos elaborados desde el primer momento con conciencia ambiental y ecológica, 
+            cuidando las propiedades naturales y los principios activos medicinales provenientes de la naturaleza. 
+            Conservando la calidad en cada uno de ellos, el método de producción no es en serie, sino, que se selecciona
+            cuidadosamente la materia prima a trabajar.         
+          </p>
+      </div>
+          <div class="hidrolatos">
+              <h1>Hidrolatos</h1>
+              <p>Los hidrolatos son aguas que contienen los principios activos hidrosolubles de plantas y flores. 
+                Son el resultado acuoso de la destilación de los aceites esenciales, obtenidos por el arrastre de 
+                vapor de plantas medicinales y flores.
+                Se obtienen durante la destilación de las plantas y flores para obtener el aceite esencial, es decir, 
+                en el mismo proceso se obtiene el aceite esencial que es más ligero y flota y el hidrolato o agua 
+                esencial, que queda en el fondo y separado.
+              </p>
+          </div>
+      <div class="contenedor-gralprod">
+      <div class="fotosProducto" id="Hidrolatos">
+        <div class="contenedor-prod">
+          <img src="images/hidrolatos empretienda 1_Mesa de trabajo 1 copia 2.jpg" alt="Hidrolato de Cedron"> 
+          <p> Hidrolato de Cedron</p>
+          </div>
+          <div class="contenedor-prod">
+            <img src="images/hidrolatos empretienda 1_Mesa de trabajo 1 copia 3.jpg" alt="Hidrolato de Melisa">
+            <p> Hidrolato de Melisa</p>
+          </div>
+          <div class="contenedor-prod">
+            <img src="images/hidrolatos empretienda 1_Mesa de trabajo 1 copia 4.jpg" alt="Hidrolato de Poleo">
+            <p> Hidrolato de Poleo</p>
+            </div>
+            <div class="contenedor-prod">
+          <img src="images/hidrolatos empretienda 1_Mesa de trabajo 1 copia 5.jpg" alt="Hidrolato de Lupulo">
+          <p> Hidrolato de Lupulo</p>
+          </div>
+         
+        </div>
+        
+
+
+        <div class="fotosProducto" id="Hidrolatos">
+          
+           
+            <div class="contenedor-prod">
+             <img src="images/hidrolatos empretienda 1_Mesa de trabajo 1 copia 6.jpg" alt="Hidrolato de Rosas">
+             <p> Hidrolato de Rosas</p>
+            </div>
+            <div class="contenedor-prod">
+            <img src="images/hidrolatos empretienda 1_Mesa de trabajo 1 copia 7.jpg" alt="Hidrolato de Lavanda">
+            <p> Hidrolato de Lavanda</p>
+            </div>
+            <div class="contenedor-prod">
+            <img src="images/hidrolatos empretienda 1_Mesa de trabajo 1 copia.jpg" alt="Hidrolato de Romero">
+            <p> Hidrolato de Romero</p>
+            </div>
+            <div class="contenedor-prod">
+            <img src="images/hidrolatos empretienda 1_Mesa de trabajo 1.jpg" alt="Hidrolato de Tomillo">
+            <p> Hidrolato de Tomillo</p>
+            </div>
+        </div>
+
+      </div>
+  </div>
+
+  <div class="burbujas">
+    <div class="burbuja"></div>
+    <div class="burbuja"></div>
+    <div class="burbuja"></div>
+    <div class="burbuja"></div>
+    <div class="burbuja"></div>
+    <div class="burbuja"></div>
+    <div class="burbuja"></div>
+    <div class="burbuja"></div>
+    <div class="burbuja"></div>
+    <div class="burbuja"></div>
+</div>
+      <!-- footer section start -->
+      <footer>
+
+
+        <span class="copy">
+            Creado por <a href="">NAIMA</a> | <span class="far fa-copyright"></span> 2022 Todos los derechos
+            reservados.
+
+        </span>
+        <div class="socials">            
+
+            <img src="images/git.png" alt="" class="social_img">
+            <a href="" class="social_link" target="_blank" >GitHub</a>
+        </div>
+        
+
+    </footer>
     
 
-    <p class="copy">&copy; Copyright 2022</p>
-    
-</footer>
 
-<!-- Website scripts -->
+<!--------------------------------------------------------------- Website scripts ----------------------------------------------->
 <script src="assets/js/app.js"></script>
 
-<!-- Ion icons scripts -->
+<!------------------------------------------------------------------ Ion icons scripts ---------------------------------------------->
 <script
   type="module"
   src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
@@ -93,5 +163,7 @@
   nomodule
   src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
 ></script>
+
+<script src="js/script.js"></script>
 </body>
 </html>

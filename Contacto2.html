@@ -1,46 +1,61 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
-        <title>Formulario de contacto</title>
+        <title>Formulario de contacto NAIMA</title>
         <meta charset="utf-8"/>
         <script src="js/localStorage.js"></script>
-        <link rel="stylesheet" href="css/contacto2.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
     </head>
     <body> 
-        <nav>
-            <h1>NAIMA NATURALEZA ORGANICA</h1>
-                <input type="checkbox" id="menu">
-                <label for="menu"> ☰ </label>
-                
-          <ul class="navegacion">
-              <li><a href="index.html" class="nav-link">Inicio</a></li>
-                <li><a href="Productos.html" class="nav-link">Productos</a></li>
-                <li><a href="Contacto2.html" class="nav-link">Contacto</a></li>
-                <li><a href="Historiales.html" class="nav-link">Gestion</a></li>
-      
-              </ul>
-                 
-        </nav>
 
-        <header>Contactate con nosotros</header>
+        <!---------------------------------- NAVBAR NAVBAR NAVBAR ----------------------------------------->
+        <div class="scroll-up-btn">
+            <i class="fas fa-angle-up"></i>
+        </div>
+        <nav class="navbar">
+            <div class="max-width">
+                <div class="logo"><a href="#">NAI<span>MA</span></a></div>
+                <ul class="menu">
+                    <li><a href="index.html" class="menu-btn">Inicio</a></li>
+                    <li><a href="Historiales.html" class="menu-btn">Historiales</a></li>
+                    <li><a href="Productos.html" class="menu-btn">Productos</a></li>
+                    <li><a href="Contacto2.html" class="menu-btn">Contacto</a></li>
+    
+                </ul>
+                <div class="menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    
+<!---------------------------------- SECTION CONTACT SECTION CONTACT SECTION CONTACT ----------------------------------------->
+<div class="container-contact"  >    
+    <h1>Contactate con nosotros</h1>
         <br><br>
 	    <form onsubmit="return formSubmitted();">
 	        <fieldset>
             <legend>Informacion Personal</legend>
 		        <label>
-			        Nombre : 
-			        <input type="text" id="nombre" required>
+			        <h3>Nombre:</h3> 
+			        <input type="text" id="nombre" required placeholder="Nombre">
 		        </label><br>
                 <label>
-			        Apellido : 
-			        <input type="text" id="apellido" required>
+			        <h3>Apellido:</h3>
+			        <input type="text" id="apellido" required placeholder="Apellido">
 		        </label><br>
 		        <label>
-			        Email : 
-			        <input type="email" id="email" required>
+			       <h3>Email:</h3>
+			        <input type="email" id="email" required placeholder="Email">
 		        </label><br>
 		        <label>
-			        Fecha de Nacimiento : 
+			        <h3>Fecha de Nacimiento:</h3> 
 			        <input type="date" id="fdn" required>
 		        </label><br>
 		        <br>
@@ -49,11 +64,30 @@
 	    </form>
 	
   <h3>Lista de contactos</h3> 
-  <div id="contactos"></div>
-	<div id="botones"><button onclick="vaciarLista();">Vaciar</button> 
-	 <button onclick="lc.salvarLista();">Guardar</button> 
-   <button onclick="cargarLista();">Cargar</button>
-</div>
+    <div id="contactos"></div>
+	    <div id="botones"><button onclick="vaciarLista();">Vaciar</button> 
+	        <button  button onclick="lc.salvarLista();">Guardar</button> 
+            <button onclick="cargarLista();">Cargar</button>
+        </div>
 
+</div>  
+   <!-- footer section start -->
+   <footer>
+
+
+    <span class="copy">
+        Creado por <a href="">NAIMA</a> | <span class="far fa-copyright"></span> 2022 Todos los derechos
+        reservados.
+
+    </span>
+    <div class="socials">            
+
+        <img src="images/git.png" alt="" class="social_img">
+        <a href="" class="social_link" target="_blank" >GitHub</a>
+    </div>
+    
+
+</footer>
+<script src="js/script.js"></script>
 </body>
 </html>

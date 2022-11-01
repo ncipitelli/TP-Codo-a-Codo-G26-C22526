@@ -1,211 +1,94 @@
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="page icon" type="image/png" sizes="32x32" href="favicon/icono.png" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NAIMA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
 
-    <!--Estilos CSS -->
-    <link rel="stylesheet" href="css/miestilo.css" />
+</head>
 
-    <!-- Favicons -->
-    <link rel="foto principal" sizes="180x180" href="images/Foto principal.png" />
+<body>
+    <div class="scroll-up-btn">
+        <i class="fas fa-angle-up"></i>
+    </div>
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="#">NAI<span>MA</span></a></div>
+            <ul class="menu">
+                <li><a href="index.html" class="menu-btn">Inicio</a></li>
+                <li><a href="Historiales.html" class="menu-btn">Historiales</a></li>
+                <li><a href="Productos.html" class="menu-btn">Productos</a></li>
+                <li><a href="Contacto2.html" class="menu-btn">Contacto</a></li>
 
-    <!-- Animaciones CSS CDN -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <title>Jane Doe | Desarrolladora Web</title>
-  </head>
-
-  <body>
-   
-    <!-- Barra de Navegación -->
-    <nav>
-      <h1>NAIMA NATURALEZA ORGANICA</h1>
-          <input type="checkbox" id="menu">
-          <label for="menu"> ☰ </label>
-          
-    <ul class="navegacion">
-          <li><a href="index.html" class="nav-link">Inicio</a></li>
-          <li><a href="Productos.html" class="nav-link">Productos</a></li>
-          <li><a href="Contacto2.html" class="nav-link">Contacto</a></li>
-          <li><a href="Historiales.html" class="nav-link">Gestion</a></li>
-        </ul>
-       
-  </nav>
-  <header>Sobre nosotros</header>
-    <!-- Sección Hero  -->
-
-    <section class="hero" id="inicio">
-        
-        <div class="bio animate__animated animate__shakeX">
-          <h2 class="bio-titulo"></h2>
-          <p class="bio-texto">
-            Somos productores. Extraemos el principio activo de nuestros cultivos y
-             elaboramos productos naturales para el cuidado del cuerpo&mente
-          </p>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
         </div>
-  </section>
+    </nav>
 
-    <!-- Sobre Mí -->
-
-    <section class="mas-sobre">
-        <h2>¿Que hacemos?</h2>
-        <p>
-         | En NAIMA elaboramos productos naturales de máxima calidad con conciencia ambiental y ecológica. 
-         Los ingredientes activos son de producción propia, en nuestra granja orgánica ubicada en Colinas 
-         Verdes, Provincia de Buenos Aires. Hacemos especial hincapié en la manipulación y conservación de
-          la materia prima, cuidando las propiedades naturales y los principios activos medicinales. Tanto 
-          el diseño, como el empaque se realizan de forma artesanal para que recibas un producto único. 
-          Que lo disfrutes…. 
-         |
-        </p>
-       
-      </section>
-
-      <section class="fotos_portada">
-        <img id="lavanda" src="images/DSC00107.JPG" alt="campo_lavanda">
-      </section>
-
-    <!-- Sección Habilidades -->
-
-    <!--<section class="habilidades" id="habilidades">
-        <h2 class="header-habilidadr">Algunos de los elementos naturales con los que trabajamos</h2>
-  
-        <div class="contenedor-habilidades">
-          <div class="first-set animate__animated animate__pulse">
-            <img
-              src="icons/avena.png"
-              alt=""
-              loading="lazy"
-              class="icon icon-card"
-            />
-            <img
-              src="icons/coco.png"
-              alt=""
-              loading="lazy"
-              class="icon icon-card"
-            />
-            <img
-              src="icons/lavanda.png"
-              alt=""
-              loading="lazy"
-              class="icon icon-card"
-            />
-          </div>
-  
-          <div class="second-set animate__animated animate__pulse">
-            <img
-              src="icons/miel.png"
-              alt=""
-              loading="lazy"
-              class="icon icon-card"
-            />
-            <img
-              src="icons/romero.png"
-              alt=""
-              loading="lazy"
-              class="icon icon-card"
-            />
-            <img
-              src="icons/rosa.png"
-              alt=""
-              loading="lazy"
-              class="icon icon-card"
-            />
-          </div>
+    <!-- home section start -->
+    <section class="home" id="home">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text-1">Bienvenidos a</div>
+                <div class="text-2">NAI<span>MA</span></div>
+                <div class="text-3">Tienda de productos naturales</span></div>
+            </div>
         </div>
-      </section>-->
-    <!-- Sección Proyectos -->
+    </section>
 
-    <!-- Sección Contacto-->
- 
-<!--
-    <section class="contacto" id="contacto">
-        <h2>Contacto</h2>
-        <div class="formulario-contacto-contenedor">
-          <div class="formulario-contacto">
-            <form action="https://formspree.io/f/xyylngw" method="POST">
-              <div class="control-formulario">
-                <label for="name">Nombre completo</label>
-                <input
-                  type="text"
-                  id="name"
-                  name="sender-name"
-                  placeholder="Escribe tu nombre"
-                  class="input-field"
-                  required
-                />
-              </div>
-              <div class="control-formulario">
-                <label for="email">Email</label>
-                <input
-                  type="email"
-                  id="email"
-                  name="sender-email"
-                  placeholder="Ingreso tu correo electrónico"
-                  class="input-field"
-                  required
-                />
-              </div>
-              <div class="control-formulario">
-                <label for="mensaje">Mensaje</label>
-                <textarea
-                  id="mensaje"
-                  cols="60"
-                  rows="10"
-                  placeholder="Escribe tu mensaje"
-                  name="mensaje"
-                  class="input-field"
-                  required
-                ></textarea>
-              </div>
-              <input
-                type="submit"
-                value="Enviar"
-                id="submit-btn"
-                class="submit-btn"
-              />
-            </form>
-          </div>
+    <!-- about section start -->
+    <section class="about" id="about">
+        <div class="max-width">
+            <h2 class="title">Acerca de NAI<span>MA</span></h2>
+            <div class="about-content">
+                <div class="column left">
+                    <img src="images/1628778701043.jpg" alt="">
+                </div>
+                <div class="column right">
+                    <div class="text">Somos NAIMA!</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         Eius maxime voluptate facere, ipsam perspiciatis temporibus est, nihil voluptates excepturi nam, 
+                         dolorem accusantium dicta! Nisi facilis, accusantium libero voluptas minus, repudiandae molestias deleniti,
+                          numquam neque incidunt aliquam porro. Temporibus amet voluptatibus nobis, quaerat eius omnis,
+                           velit nesciunt est consequatur quo aspernatur?
+                    </p>
+                    
+                </div>
+            </div>
         </div>
-      </section>
-    -->
-    <!-- Sección de redes sociales - Fijado a la derecha -->
- <!--   <div class="sociales">
-        <a href="#" target="_blank"><img src="icons/instagram.png" alt="Instagram" loading="lazy" class="socicon" /></a>
-        <a href="#" target="_blank"><img src="icons/github.png" alt="Github" class="socicon" /></a>
--->
-    <!-- Vuelve al comienzo  -->
-<!--    <i class="desplazarse-hacia-arriba" id="desplazarse-hacia-arriba"
-      ><img
-        src="icons/flecha-hacia-arriba.png"
-        class="socicon up-arrow"
-        alt="desplazarse-hacia-arriba"
-    /></i>
--->
-    <!-- Sección Footer  -->
+    </section>
+
+    
+    <!-- footer section start -->
     <footer>
-        <p class="copy">&copy; Copyright 2022</p>
+
+
+        <span class="copy">
+            Creado por <a href="">NAIMA</a> | <span class="far fa-copyright"></span> 2022 Todos los derechos
+            reservados.
+
+        </span>
+        <div class="socials">            
+
+            <img src="images/git.png" alt="" class="social_img">
+            <a href="" class="social_link" target="_blank" >GitHub</a>
+        </div>
         
-  </footer>
 
-    <!-- Website scripts -->
-    <script src="assets/js/app.js"></script>
+    </footer>
 
-    <!-- Ion icons scripts -->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
-  </body>
+    <script src="js/script.js"></script>
+</body>
+
 </html>
